@@ -627,7 +627,7 @@ func ReadDataPageValues(bytesReader *bytes.Reader, encodingMethod parquet.Encodi
 		}
 		return buf[:cnt], err
 
-	} else if encodingMethod == parquet.Encoding_RLE {
+	} else if encodingMethod == parquet.Encoding_RLE || encodingMethod == parquet.Encoding_RLE_DICTIONARY {
 		values, err := encoding.ReadRLEBitPackedHybrid(bytesReader, bitWidth, 0)
 		if err != nil {
 			return res, err

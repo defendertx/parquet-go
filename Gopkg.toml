@@ -7,6 +7,10 @@
   branch = "master"
   name = "github.com/golang/snappy"
 
+[[constraint]]
+  source = "github.com/defendertx/parquet-go"
+  name = "github.com/xitongsys/parquet-go"
+
 [prune]
   go-tests = true
   unused-packages = true

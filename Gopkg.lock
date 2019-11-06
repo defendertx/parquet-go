@@ -2,7 +2,15 @@
 
 
 [[projects]]
-  digest = "1:1b2208b11ad707c7fce6bb4d093b507dd3dfe378dfd88fdf5097cf26ad5beff4"
+  digest = "1:938f79d09131c6204cee2c363a6e9066a369bc1977f09028ca549f44a836b734"
+  name = "github.com/DataDog/zstd"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "8fdb579680349497546a04291cedfff98a7829a0"
+  version = "v1.4.4"
+
+[[projects]]
+  digest = "1:e95de5c830369d6592224de57a31cd87a2ba1cec2abaf050d06a63ee8f7babd8"
   name = "github.com/apache/thrift"
   packages = ["lib/go/thrift"]
   pruneopts = "UT"
@@ -18,6 +26,29 @@
   revision = "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
 
 [[projects]]
+  digest = "1:32ff4a621bbae74c7639a9d294a4857dbd9546e15da9f3102c4f50deca8e8a30"
+  name = "github.com/xitongsys/parquet-go"
+  packages = [
+    "common",
+    "compress",
+    "encoding",
+    "layout",
+    "marshal",
+    "parquet",
+    "reader",
+    "schema",
+    "source",
+    "tool/parquet-tools/schematool",
+    "tool/parquet-tools/sizetool",
+    "types",
+    "writer",
+  ]
+  pruneopts = "UT"
+  revision = "06aec27b2a98c70158bb1ff994697e7440ba09e9"
+  source = "github.com/defendertx/parquet-go"
+  version = "v1.4.0"
+
+[[projects]]
   branch = "master"
   digest = "1:5a652617d8b57d72ac3582c45a2d0c2530c35962e4b200f8d27dd2979b98d1fc"
   name = "github.com/xitongsys/parquet-go-source"
@@ -29,9 +60,23 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
+    "github.com/DataDog/zstd",
     "github.com/apache/thrift/lib/go/thrift",
     "github.com/golang/snappy",
     "github.com/xitongsys/parquet-go-source/local",
+    "github.com/xitongsys/parquet-go/common",
+    "github.com/xitongsys/parquet-go/compress",
+    "github.com/xitongsys/parquet-go/encoding",
+    "github.com/xitongsys/parquet-go/layout",
+    "github.com/xitongsys/parquet-go/marshal",
+    "github.com/xitongsys/parquet-go/parquet",
+    "github.com/xitongsys/parquet-go/reader",
+    "github.com/xitongsys/parquet-go/schema",
+    "github.com/xitongsys/parquet-go/source",
+    "github.com/xitongsys/parquet-go/tool/parquet-tools/schematool",
+    "github.com/xitongsys/parquet-go/tool/parquet-tools/sizetool",
+    "github.com/xitongsys/parquet-go/types",
+    "github.com/xitongsys/parquet-go/writer",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
