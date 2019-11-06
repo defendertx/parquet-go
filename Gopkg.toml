@@ -10,6 +10,7 @@
 [[constraint]]
   source = "github.com/defendertx/parquet-go"
   name = "github.com/xitongsys/parquet-go"
+  branch = "rle-dictionary"
 
 [prune]
   go-tests = true

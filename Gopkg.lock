@@ -26,7 +26,8 @@
   revision = "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
 
 [[projects]]
-  digest = "1:32ff4a621bbae74c7639a9d294a4857dbd9546e15da9f3102c4f50deca8e8a30"
+  branch = "rle-dictionary"
+  digest = "1:541becbb8ce3b7da560ef958eda0d2e49f62bea9d32cc5959cd0439da88531ec"
   name = "github.com/xitongsys/parquet-go"
   packages = [
     "common",
@@ -44,9 +45,8 @@
     "writer",
   ]
   pruneopts = "UT"
-  revision = "06aec27b2a98c70158bb1ff994697e7440ba09e9"
+  revision = "6b4c821060a51b57e5f2222da5ffef8313837b52"
   source = "github.com/defendertx/parquet-go"
-  version = "v1.4.0"
 
 [[projects]]
   branch = "master"
